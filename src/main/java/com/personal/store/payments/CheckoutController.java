@@ -16,8 +16,7 @@ import java.util.Map;
 @RequestMapping("/checkout")
 public class CheckoutController {
     private final CheckoutService checkoutService;
-    private final OrderRepository orderRepository;
-
+    
     @PostMapping
     public CheckoutResponse checkout(@RequestBody CheckoutRequest request) {
         return checkoutService.checkout(request);
