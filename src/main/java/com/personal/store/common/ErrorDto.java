@@ -1,4 +1,4 @@
-package com.personal.store.dtos;
+package com.personal.store.common;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

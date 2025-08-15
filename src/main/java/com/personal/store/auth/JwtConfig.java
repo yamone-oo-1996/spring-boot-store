@@ -1,4 +1,4 @@
-package com.personal.store.configs;
+package com.personal.store.auth;
 
 import io.jsonwebtoken.security.Keys;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.personal.store.services;
+package com.personal.store.auth;
 
 import com.personal.store.users.Role;
 import io.jsonwebtoken.Claims;

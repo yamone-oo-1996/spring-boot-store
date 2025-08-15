@@ -1,4 +1,4 @@
-package com.personal.store.entities;
+package com.personal.store.products;
 
 import jakarta.persistence.*;
 import lombok.*;

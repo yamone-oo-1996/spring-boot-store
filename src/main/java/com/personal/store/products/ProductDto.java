@@ -1,4 +1,4 @@
-package com.personal.store.dtos;
+package com.personal.store.products;
 
 import lombok.Data;
 

@@ -1,7 +1,6 @@
 package com.personal.store.orders;
 
-import com.personal.store.repositories.OrderRepository;
-import com.personal.store.services.AuthService;
+import com.personal.store.auth.AuthService;
 import lombok.AllArgsConstructor;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.stereotype.Service;

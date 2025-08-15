@@ -1,6 +1,6 @@
 package com.personal.store.users;
 
-import com.personal.store.dtos.ErrorDto;
+import com.personal.store.common.ErrorDto;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;

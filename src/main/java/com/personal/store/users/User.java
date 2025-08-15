@@ -1,6 +1,6 @@
 package com.personal.store.users;
 
-import com.personal.store.entities.Product;
+import com.personal.store.products.Product;
 import jakarta.persistence.*;
 import lombok.*;
 

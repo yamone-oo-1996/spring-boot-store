@@ -1,7 +1,5 @@
-package com.personal.store.mappers;
+package com.personal.store.products;
 
-import com.personal.store.dtos.ProductDto;
-import com.personal.store.entities.Product;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;

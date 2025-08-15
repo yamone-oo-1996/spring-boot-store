@@ -1,6 +1,5 @@
-package com.personal.store.services;
+package com.personal.store.auth;
 
-import com.personal.store.configs.JwtConfig;
 import com.personal.store.users.User;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

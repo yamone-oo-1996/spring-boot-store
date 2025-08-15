@@ -1,6 +1,5 @@
-package com.personal.store.repositories;
+package com.personal.store.products;
 
-import com.personal.store.entities.Product;
 import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

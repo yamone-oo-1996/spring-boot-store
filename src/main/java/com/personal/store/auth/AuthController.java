@@ -1,9 +1,5 @@
-package com.personal.store.controller;
+package com.personal.store.auth;
 
-import com.personal.store.configs.JwtConfig;
-import com.personal.store.dtos.JwtResponse;
-import com.personal.store.dtos.LoginRequest;
-import com.personal.store.services.JwtService;
 import com.personal.store.users.UserDto;
 import com.personal.store.users.UserMapper;
 import com.personal.store.users.UserRepository;

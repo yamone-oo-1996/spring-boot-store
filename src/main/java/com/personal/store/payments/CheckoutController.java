@@ -2,8 +2,7 @@ package com.personal.store.payments;
 
 import com.personal.store.carts.CartEmptyException;
 import com.personal.store.carts.CartNotFoundException;
-import com.personal.store.dtos.ErrorDto;
-import com.personal.store.repositories.OrderRepository;
+import com.personal.store.common.ErrorDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,7 +15,7 @@ import java.util.Map;
 @RequestMapping("/checkout")
 public class CheckoutController {
     private final CheckoutService checkoutService;
-    
+
     @PostMapping
     public CheckoutResponse checkout(@RequestBody CheckoutRequest request) {
         return checkoutService.checkout(request);

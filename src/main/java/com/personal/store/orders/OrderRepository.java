@@ -1,6 +1,5 @@
-package com.personal.store.repositories;
+package com.personal.store.orders;
 
-import com.personal.store.orders.Order;
 import com.personal.store.users.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

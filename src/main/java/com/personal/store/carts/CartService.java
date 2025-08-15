@@ -1,7 +1,7 @@
 package com.personal.store.carts;
 
-import com.personal.store.exceptions.ProductNotFoundException;
-import com.personal.store.repositories.ProductRepository;
+import com.personal.store.products.ProductNotFoundException;
+import com.personal.store.products.ProductRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -1,7 +1,7 @@
 package com.personal.store.carts;
 
-import com.personal.store.dtos.ErrorDto;
-import com.personal.store.exceptions.ProductNotFoundException;
+import com.personal.store.common.ErrorDto;
+import com.personal.store.products.ProductNotFoundException;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;

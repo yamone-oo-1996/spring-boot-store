@@ -1,10 +1,5 @@
-package com.personal.store.controller;
+package com.personal.store.products;
 
-import com.personal.store.dtos.ProductDto;
-import com.personal.store.entities.Product;
-import com.personal.store.mappers.ProductMapper;
-import com.personal.store.repositories.CategoryRepository;
-import com.personal.store.repositories.ProductRepository;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
