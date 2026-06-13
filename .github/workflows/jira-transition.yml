@@ -1,0 +1,25 @@
+name: Jira Transition on PR Approval
+
+on:
+  pull_request_review:
+    types: [submitted]
+
+jobs:
+  transition-jira:
+    if: github.event.review.state == 'approved'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Extract Jira Issue Key from PR Title
+        id: extract
+        run: |
+          PR_TITLE="${{ github.event.pull_request.title }}"
+          ISSUE_KEY=$(echo "$PR_TITLE" | grep -oP '[A-Z]+-[0-9]+')
+          echo "Extracted: $ISSUE_KEY"
+          echo "issue_key=$ISSUE_KEY" >> $GITHUB_OUTPUT
+
+      - name: Call Jira Webhook
+        if: steps.extract.outputs.issue_key != ''
+        run: |
+          curl -X POST "${{ secrets.JIRA_WEBHOOK_URL }}&issueKey=${{ steps.extract.outputs.issue_key }}" \
+            -H "Content-Type: application/json"
