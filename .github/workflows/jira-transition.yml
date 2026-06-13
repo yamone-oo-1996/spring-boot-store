@@ -21,5 +21,6 @@ jobs:
       - name: Call Jira Webhook
         if: steps.extract.outputs.issue_key != ''
         run: |
-          curl -X POST "${{ secrets.JIRA_WEBHOOK_URL }}&issueKey=${{ steps.extract.outputs.issue_key }}" \
-            -H "Content-Type: application/json"
+          curl -X POST "${{ secrets.JIRA_WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            -d '{"issueKey": "${{ steps.extract.outputs.issue_key }}"}'
